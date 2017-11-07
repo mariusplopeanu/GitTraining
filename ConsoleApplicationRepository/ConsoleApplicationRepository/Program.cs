@@ -10,8 +10,10 @@ namespace ConsoleApplicationRepository
   {
     static void Main(string[] args)
     {
-      string str = "Hello world!";
-      Console.WriteLine(str);
+      string str = "Hello world";
+      var repository = new Repository();
+      repository.StringRepository = "Marius!";
+      Console.WriteLine(str + repository.StringRepository);
       Console.ReadKey();
     }
   }
