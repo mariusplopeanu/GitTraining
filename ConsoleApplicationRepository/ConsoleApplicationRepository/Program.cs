@@ -13,7 +13,15 @@ namespace ConsoleApplicationRepository
       string str = "Hello world";
       var repository = new Repository();
       repository.StringRepository = "Marius!";
-      Console.WriteLine(str + repository.StringRepository);
+
+      repository.isEmpty = (String.IsNullOrEmpty(repository.StringRepository)) ? true : false;
+
+
+      if (repository.isEmpty == null || repository.isEmpty == true)
+        Console.WriteLine(str + repository.StringRepository);
+      else
+        Console.WriteLine(str);
+
       Console.ReadKey();
     }
   }

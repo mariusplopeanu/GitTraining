@@ -9,5 +9,6 @@ namespace ConsoleApplicationRepository
   class Repository
   {
     public string StringRepository { get; set; }
+    public bool? isEmpty { get; set; }
   }
 }
