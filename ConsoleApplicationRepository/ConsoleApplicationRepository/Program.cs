@@ -14,10 +14,10 @@ namespace ConsoleApplicationRepository
       var repository = new Repository();
       repository.StringRepository = "Marius!";
 
-      repository.isEmpty = (String.IsNullOrEmpty(repository.StringRepository)) ? true : false;
+      repository.IsEmpty = (String.IsNullOrEmpty(repository.StringRepository)) ? true : false;
 
 
-      if (repository.isEmpty == null || repository.isEmpty == true)
+      if (repository.IsEmpty == null || repository.IsEmpty == true)
         Console.WriteLine(str + repository.StringRepository);
       else
         Console.WriteLine(str);
